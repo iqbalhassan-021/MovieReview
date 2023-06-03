@@ -1,0 +1,39 @@
+﻿@page "/AdminPage"
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/NewCss/Style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews</title>
+</head>
+
+    <NavBar></NavBar>
+      <div class="admincontainer">
+        <h1>Upload new Movie</h1>
+        <form>
+          <div class="form-group">
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" accept="image/*">
+            <label class="upload-btn" for="image">Choose File</label>
+          </div>
+          <div class="form-group">
+            <label for="textbox1">Movie Name</label>
+            <input type="text" id="textbox1" placeholder="Enter text">
+          </div>
+          <div class="form-group">
+            <label for="textbox2">Movie Rating on IMDB</label>
+            <input type="number" id="rating" placeholder="0/10">
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" placeholder="Enter description"></textarea>
+          </div>
+          <input type="submit" value="Upload" class="upload-btn">
+        </form>
+      </div>
+    
+     <Footer></Footer>
+@code {
+
+}
